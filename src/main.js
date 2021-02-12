@@ -27,7 +27,7 @@ app.post('/api', (req, res) => {
       },
       data: {
         text: 'Amk neue nachricht',
-        channel: 'C01N19SKRPE'
+        channel: process.env.SLACK_CHANNEL
       }
     })
       .then((res) => {
