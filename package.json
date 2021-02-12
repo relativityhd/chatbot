@@ -7,7 +7,7 @@
     "start": "node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/main.js",
-    "install": "cd frontend && npm run build"
+    "install": "cd frontend && npm run install && npm run build"
   },
   "repository": {
     "type": "git",
