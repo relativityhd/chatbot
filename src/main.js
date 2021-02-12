@@ -38,6 +38,7 @@ app.post('/api', (req, res) => {
       })
     res.send('Send message to slack!')
   } else if (type === 'email') {
+    console.log(`### Received Email: ${req.body.email}`)
     res.send('Send message to email!')
   } else {
     res.send('Invalid type, please specify!')
